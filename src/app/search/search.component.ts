@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
   //write
   set pname(pname:any) //Laptop
   {
-    this._productname=pname || 'not found';
+    this._productname=pname || 'Enter Product';
     console.log(pname)
   }
   //read

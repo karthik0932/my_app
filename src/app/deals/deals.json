@@ -1,0 +1,125 @@
+[
+    {
+        "pid":1,
+        "pname":"REDMI PHONE",
+        "pdescription":"Phantom Black 4GB RAM 64GB | Helio G88 with extendable RAM Upto 2GB | FHD+ 90Hz",
+        "price":17750,
+        "img":"https://images-eu.ssl-images-amazon.com/images/I/41NNWAx-XQL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+        "pid":2,
+        "pname":"Echo Dot",
+        "pdescription":"New and improved smart speaker with Alexa (Black)",
+        "price":1000,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605260990/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/8944988291102.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":3,
+        "pname":"Dell Inspiron 15",
+        "pdescription":"Dell Laptop",
+        "price":45000,
+        "img":"https://th.bing.com/th/id/OIP.w1nfH9XM1EoRpGvSyc-HHQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":4,
+        "pname":"Jabra Headphones",
+        "pdescription":"Jabra Headphones",
+        "price":3500,
+        "img":"https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":5,
+        "pname":"SYMBOL Watch",
+        "pdescription":"Titan watch for girls",
+        "price":1500,
+        "img":"https://m.media-amazon.com/images/I/71Iw3qLiyoL._UL1500_.jpg"
+    },
+    {
+        "pid":6,
+        "pname":"sony tv",
+        "pdescription":"Sony Bravia LED TV - 65 inch",
+        "price":35000,
+        "img":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    },
+    
+    {
+        "pid":7,
+        "pname":"Mamaearth Aloe Vera Gel",
+        "pdescription":"with Pure Aloe Vera & Vitamin E for Skin and Hair - 300ml",
+        "price":990,
+        "img":"https://m.media-amazon.com/images/I/51lLI4B4pDL._SX679_.jpg"
+    },
+    {
+        "pid":8,
+        "pname":"Godrej",
+        "pdescription":"Godrej - Double Door",
+        "price":21290,
+        "img":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTg01f1ZxiVCl5P-pvUiZFudHHGzqthqP03JaA3iC5p-YIjms0-88OSFqpNlbB9EloA3GJAJ_0FVGLWZDbZbaB4pXra30Z0ya675xlntrHKA03l8yMgdXljaQ&usqp=CAE"
+    },
+    {
+        "pid":9,
+        "pname":"Vedaka",
+        "pdescription":"Vedaka Fennel Seeds (Saunf), 200g",
+        "price":400,
+        "img":"https://m.media-amazon.com/images/I/917lR7VZGBL._SX679_.jpg"
+    },
+    {
+        "pid":10,
+        "pname":"SHIRTS",
+        "pdescription":"Symbol Men's Regular Fit Shirt",
+        "price":999,
+        "img":"https://m.media-amazon.com/images/I/71isliRHNfL._UY879_.jpg"
+    },
+    {
+        "pid":11,
+        "pname":"Bosch",
+        "pdescription":"Bosch - 32litres - Triple Door",
+        "price":43490,
+        "img":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTg01f1ZxiVCl5P-pvUiZFudHHGzqthqP03JaA3iC5p-YIjms0-88OSFqpNlbB9EloA3GJAJ_0FVGLWZDbZbaB4pXra30Z0ya675xlntrHKA03l8yMgdXljaQ&usqp=CAE"
+    },
+    {
+        "pid":12,
+        "pname":"Vedaka",
+        "pdescription":"Vedaka Fennel Seeds (Saunf), 200g",
+        "price":400,
+        "img":"https://m.media-amazon.com/images/I/917lR7VZGBL._SX679_.jpg"
+    },
+    {
+        "pid":13,
+        "pname":"Samsung",
+        "pdescription":"Samsung - double door ",
+        "price":30000,
+        "img":"https://th.bing.com/th/id/OIP.cEq4nA2i692-UiBSIbRf0QHaIq?w=176&h=206&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+    },
+    {
+        "pid":14,
+        "pname":"Voice Remote Control",
+        "pdescription":"Compatible for Amazon Fire Tv Stick [ 2nd Gen ] with Voice (Pairing Manual Will be Back Side Remote Control)",
+        "price":200,
+        "img":"https://m.media-amazon.com/images/I/41GeeUPvsvL._SY879_.jpg"
+    },  
+    {
+        "pid":15,
+        "pname":"Lenovo IdeaPad Slim 3",
+        "pdescription":"Intel Core i3-1005G1 10th Gen 15.6 HD IPS Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021",
+        "price":40000,
+        "img":"https://m.media-amazon.com/images/I/61Dw5Z8LzJL._SX679_.jpg"
+    },
+    {
+        "pid":16,
+        "pname":"HP X200 Wireless Mouse",
+        "pdescription":"2.4 GHz Wireless connectivity, Adjustable DPI up to 1600, ambidextrous Design, and 18-Month Long Battery Life.",
+        "price":300,
+        "img":"https://m.media-amazon.com/images/I/71gEuyRXIDL._SX679_.jpg"
+    },  
+    {
+        "pid":17,
+        "pname":"BOOKS",
+        "pdescription":"India that is Bharat: Coloniality, Civilisation, Constitution",
+        "price":200,
+        "img":"https://images-eu.ssl-images-amazon.com/images/I/512DQT3R3fS._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+    }
+    
+
+
+]

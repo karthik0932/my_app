@@ -1,18 +1,31 @@
 img {
-    height: 500px;
-  }
+  height: 500px;
+}
+/*access the style through class attribute*/
+.stylebinding1 {
+  color: red;
+  background-color: beige;
+}
 
-  .stylebinding1{
-    color:red;
-    background-color: beige;
-  }
-  /*Class for retrieving details from ProductDetails using *ngFor and *ngSwitchCase*/
-  .red{
-    color:red;
-  }
-  .green{
-    color:green;
-  }
-  .yellow{
-    color:yellow;
-  }
+/*Class for retrieving details from ProductDetails using *ngFor and *ngSwitchCase*/
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+/*Styling using ngClass*/
+.blue{
+  color:blue;
+}
+.shadow{
+  text-shadow: 2px 2px 2px rgb(255, 230, 0);
+}
+.size{
+  font-size: 24px;
+}

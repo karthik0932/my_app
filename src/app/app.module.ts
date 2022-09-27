@@ -2,12 +2,34 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 //accessing ngModel for 2-way binding
 import { FormsModule } from '@angular/forms';
+//Reactive Forms
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
 import { SearchComponent } from './search/search.component';
+import { SquarePipe } from './square.pipe';
+import { MicroovenComponent } from './microoven/microoven.component';
+import { RefrigeratorComponent } from './refrigerator/refrigerator.component';
+import { WashingmachineComponent } from './washingmachine/washingmachine.component';
+import { WashingmachinedealsComponent } from './washingmachine/washingmachinedeals/washingmachinedeals.component';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { DealsComponent } from './deals/deals.component';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { AmazondealsComponent } from './deals/amazondeals/amazondeals.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -15,12 +37,33 @@ import { SearchComponent } from './search/search.component';
     NavComponent,
     HomeComponent,
     CardsComponent,
-    SearchComponent
+    SearchComponent,
+    SquarePipe,
+    MicroovenComponent,
+    RefrigeratorComponent,
+    WashingmachineComponent,
+    WashingmachinedealsComponent,
+    AllproductsComponent,
+    DealsComponent,
+    AdvertisementComponent,
+    AmazondealsComponent,
+    CounterComponent,
+    CounterchildComponent,
+    ContactComponent,
+    ProductdetailsComponent,
+    LoginComponent,
+    RegisterComponent,
+    CartItemsComponent,
+    
+
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

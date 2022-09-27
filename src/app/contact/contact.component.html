@@ -1,0 +1,67 @@
+<h2 style="text-align: center;">
+    Feel Free to Contact us Anytime
+</h2>
+
+<div style="margin-top: 30px;">
+    <div class="row">
+      
+        <!--2nd column-->
+        <div class="card col-lg-5 col1" style="border:none;margin-top: 30px;">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;"
+                    *ngFor="let m of contact">
+                    <div class="col-lg-3">
+                        <!--Property Binding-->
+                        <img [src]="m.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <div>
+                            Queries Related : {{ m.pqueries}}
+                            
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetails">
+                            Supporter ID: {{m.pid}}
+                            <br>
+                            Supporter Name: {{m.pname | uppercase}}
+                            <br>
+                               Email: {{m.pemail}}
+                               <br>
+                               Contact Number: {{ m.pnum }}
+                               <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5 col2" >
+            <h2 style="text-align: center;">Reviews</h2>
+            
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+      <label class="required" for="name">Your name:</label><br />
+      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+      <span id="name_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br />
+      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+      <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="message">Your message:</label><br />
+      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
+    </div>
+      <br>
+      <input id="submit_button" type="submit" value="Send email" />
+  </form>
+
+        </div>
+        </div>
+        </div>
+
+<!-- 2nd column -->
+

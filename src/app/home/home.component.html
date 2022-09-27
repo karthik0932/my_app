@@ -13,24 +13,24 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="https://3.bp.blogspot.com/-0KmwLussiFQ/Urglf2WVqWI/AAAAAAAAAXY/9G4MNAST2tw/s1600/laptops.jpeg" class="d-block w-100" alt="CSS">
+        <img src="https://paisebachaoindia.com/wp-content/uploads/2015/10/img545.png" class="d-block w-100" alt="CSS">
         <div class="carousel-caption d-none d-md-block">
-          <h5>DELL</h5>
-          <p [ngStyle]="{color:mycolor}">LAPTOPS</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://i.pinimg.com/originals/d2/3d/e1/d23de1ec140496144f4aa2b4a90c3030.jpg" class="d-block w-100" alt="JS">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>KIDS</h5>
-          <p [ngStyle]="{color:mycolor}">TOYS</p>
+          <h5 [ngClass]="prod_array">ELECTRONICS</h5>
+          <p [ngStyle]="{color:mycolor}">CAMERA</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://fthmb.tqn.com/--g_FXSTs_FEdjuG27FYKhR2-r4=/2000x1500/filters:fill(auto,1)/appliancesalexeydudoladovGettyImages-171589331-57b37c3c5f9b58b5c2cb819c.jpg" class="d-block w-100" alt="JQ">
+        <img src="https://www.indiaretailing.com/wp-content/uploads/2022/06/Snapdeal.jpeg" class="d-block w-100" alt="JQ">
         <div class="carousel-caption d-none d-md-block">
-          <h5>HOME APPLIANCES</h5>
-          <p [ngStyle]="{color:mycolor}">WASHING MACHINE,REFRIGERATOR,DISH WASHER</p>
+          <h5 [ngClass]="prod_array">DRESS</h5>
+          <p [ngStyle]="{color:mycolor}">FOR ADULT AND CHILDREN</p>
+        </div>
+      </div> 
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/Snapdeal.jpg" class="d-block w-100" alt="JS">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 [ngClass]="prod_array">TABS LAPTOPS</h5>
+          <p [ngStyle]="{color:mycolor}">HP, ASUS</p>
         </div>
       </div>
     </div>
@@ -45,23 +45,26 @@
   </div>
   <br>
   <br>
+  <!--TWO WAY BINDING
   Enter the Color for Carousel Contents:  <input [(ngModel)]="mycolor" type="text" style="border-radius:10px;">
   <br>
   <br>
   <!--*ngFor to retrieve the contents from products-->
   <!--*ngIf in the <ul> for toggle effct - hide/show the contents-->
   <ul *ngIf="isVisible">
-    <li *ngFor="let product of Products" [ngStyle]="{color:mycolor}">
+    <!--Access the class products with ngClass-->
+    <!--Property Binding
+    <li *ngFor="let product of Products" [ngClass]="prod">
         {{product.productname}}
     </li>
   </ul>
-  <!--Event to hide product details-->
+  <!--Event to hide product details
   <button (click)="hide_products()" [style.background-color]="mycolor">Hide the Product details</button>
   <!--*ngSwitch for Product-->
   <!--Property Binding-->
   <br>
   <br>
-  <ul [ngSwitch]="product"> 
+  <!--<ul [ngSwitch]="product"> 
     <li *ngSwitchCase="'Dress'">Dress</li>
     <li *ngSwitchCase="'Footwear'">Footwear</li>
     <li *ngSwitchCase="'Headphones'">Headphones</li>
@@ -69,17 +72,16 @@
     <li *ngSwitchDefault>Not Found</li>
   </ul>
   <hr>
-  <!--STYLE BINDING-->
+  
 <p [style.color]="'red'" [style.font-size.px]="'24'" [style.background-color]="'aqua'">Red Color</p>
 <p [style.background-color]="'aqua'">Red Color</p>
 <p [style.font-size.px]="'24'">Red Color</p>
 <p class="stylebinding1">Class Binding</p>
 <hr>
-<!--TERNARY OPERATOR FOR STYLE BINDING-->
-<button [style.color]="errorcolor=='red1'?'red':'blue'">STYLE BINDING USING TERNARY </button>
+
+<button [style.color]="errorcolor=='blue'?'red':'blue'">STYLE BINDING USING TERNARY </button>
 <hr>
-<!--Access the ProductDetails *ngFor and *ngSwitchCase-->
-<!--red,green,yellow classes are created in the component.css-->
+
 <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.color">
   <li *ngSwitchCase="'green'" class="green">
     {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
@@ -92,17 +94,41 @@
   </li>
 </ul>
 <hr>
-<!--Bootstrap contextual classes(eg text-success)-->
+
 <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.status">
   <li *ngSwitchCase="'Active'" class="text-success">
-    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status | uppercase}}
   </li>
   <li *ngSwitchCase="'InActive'" class="text-danger">
-    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status | lowercase}}
   </li>
   <li *ngSwitchDefault class="text-warning">
     {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
   </li>
 </ul>
 <hr>
+
 <p [style.color]="getColor()">Hello</p>
+<hr>
+
+
+Today's Date : {{date_today}}
+<br>
+Today's Date : {{date_today | date }}
+<br>
+Today's Date : {{date_today | date | uppercase}}
+<br>
+Today's Date : {{date_today | date:'short' | uppercase}}
+<br>
+Today's Date : {{date_today | date:'long' | uppercase}}
+<hr>
+
+<br>
+Price: {{price}}
+<br>
+Price: {{price | currency:'INR'}}
+<br>
+Price: {{price | currency:'USD'}}
+<hr>
+
+Calculate Square of 4: {{ 4 | square}}-->
