@@ -1,0 +1,33 @@
+<div class="mt-5">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+      <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+                    <div class="login-form">
+                            <form class="mt-5" [formGroup]="adminForm" (ngSubmit)="login()">
+                                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Login to Snapdeal</h2>
+                                <br>
+                                <a class="navbar-brand" href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAAkFBMVEX/IkH/////I0L/Ciz/8fP/Fjb/fI//ID//Fzj/boL/Gzv/FTb/DjD/Gjr/EjP/DzD/xMz/V27/3uL/6+7/8vT/jZ3/tL7/maf/Z3z/PVj/RF7/pLH/9/j/TWX/hZb/j5//XnX/K0n/u8T/coX/0tn/NFD/t8H/rbj/4eX/1dv/eYv/n6z/W3H/zNT/MU3/UmpWWnGCAAAEz0lEQVR4nO2ca1faQBCGgRgn5LJRIxAREPGCqOj//3dVEmnAZDc7zmz0nHk+tfbQfTvdy1zpDf4gPfiD9ARBEARBEARBEARBEARBEARBEIRfACjPmjjpttgDyePsxI7LbDWPO1UdLfoYFqpL1dENSnR/3uUOgQFOdJZ2IBqSoFhVneJUPyv3mlWeF4cJvEucat+1qUF9nL9RcZiSOU702vUGgSD7WPY23P06PcOpvkrcik7OP1cdFxskfMOJ3rrd1aAK406T4ncTnOpl5FJ0eFuselHsaghnKNGXTl+YvWmHha38Ic7UI5cbxNsvW5o6vcCphtCZ5iDfrzqJdz9JrnCiV56rDQJexa7lteetcKqnrq69cFpZdVs8ESHgRD85OouQrqvLnvu7Hyqci9q/c/OaH/l1WVScxSRDiZ6FTkT7R27dafE/7C9xpp642CAQPR0tm5Te3j1O9a2Da++7Uzcuz+IDTvQ9/7UH8Xef7qqwVXqNU30ecIsOa8KrTVqeRZzojH1Xq7pANt+5IOA/41SfcrsgXt2qs/IsquMz2pIB71msuB1VbsrIa1r7p0bWrLkbiDf1y5YuiP9+glJ9xWnqsMmbO/OKf1QQzoc1LA1RwgXjtQdx46325a5BGNSQ1u+q/yx9PtHN6aQs1n7QM0QJs4jN1NFd87L6jJHxiN6wXda6K22mHTCAeGxQ/cZ0FkOtuV6099ZXAN/II9O1l+pjqgetreKRQTVP8tfkW9xrbQXKcO09seT2lMlWenctMkUJdxzXXmrKI820tjJee32Gay8wx1P6Skrjc/rFNfkGgbRFOKUNnSBeGz5O7oIY7fTJ+GfX3pb4hQH10kK0PmNkTo680kZeLdO5m1T7l/iG+kxG+sJA1DKbm2sT5f6r4eMLysgL4raRlP6F8RqCiD2UCadWx3DHROujGpMjY0JTpyYn7T9adw1qo/kqHplmCFtr7p/pD5OhqrSms7RVIlfvgkA8yE8bGdJdH6Bs8rhPBh8CgshvIqA7h0WtszXPzsveNdQlHbX8BtHWSdy1s6JVI4gy8rTTbp+d6MC+ijz3VPNp00B2EBuSjnq2o+Z7TUNOdOWZwyRKFjSdCUbXnZQVzYvoa3Jh9BAlmpDtgjhyItcjMTnuhOhTaxZAbZmFBX2OygpdgpcWwoKRnY/3A+aUjVjBuxPNC9pQ3NbLQ0HdGoRtF7QhI08/psh2QQvomzhBcWvOGZzZCOPpWUCf5e2xu3pMFVtsrb4dPZ56HKj2OSZr5lz1Wka3mvZVqQLG4haWM84WBIWcWDDA20Ud8DjWb6w9suaMOAaOV6UKtl1QxzX36JmmsQbLhn/Ypa6T8GcwN7d9AthBrSamLoZGiCMvvlflANLIa+Voegs8usgrI6xV6CF0QdwNnKEHtb7B/aocqEYOah1z7bTEgR3UOoSzu7QGUBSRl4NX5QCKyOvdddUODE2FLXD0qhyoRk4s7OGMVRrBDmqVzDr5JgTwcV30JQ+Ox5hL0cYWTB3Drsq5MXJQq8+UAWtF+56mYzbdfbXH0SSlBQ5ngb+rtuhqqkJaV7FGoWpeHbwqVVAbZNLZIfwiXm7tvl/ncdqtnT+BILX7JiPlZghYEARBEARBEARBEARBEARBEARBEH4R/wBMEVioChYbrgAAAABJRU5ErkJggg==" alt="Snapdeal"></a>
+                                <div class="mt-5">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="User Email">
+                                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Email is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-warning" routerLink="/productdetails">Login</button>
+                                
+                               
+                                </div>
+                            </form>
+                        </div>
+                 </div>
+             </div>
+        </div>
+    </div>

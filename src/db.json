@@ -183,5 +183,14 @@
       "quantity": 1,
       "id": 4
     }
+  ],
+  "Admin": [
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 3
+    }
   ]
 }

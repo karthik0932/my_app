@@ -14,33 +14,31 @@
             <!--SPA - Partial Rendering - routerLink-->
             <a class="nav-link active" aria-current="page" routerLink="">Home</a>
           </li>
-          
           <li class="nav-item">
-            <a  class="nav-link" routerLink="cards">All Products</a>
+            <a class="nav-link" routerLink="admin">Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="productdetails">Product details</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" routerLink="register">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="deals">Deals</a>
+            <a  class="nav-link" routerLink="cards"  *ngIf="auth">All Products</a>
           </li>
           
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" *ngIf="!auth">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="deals" *ngIf="auth">Deals</a>
+          </li>
+          
+          <li class="nav-item dropdown"  *ngIf="auth">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Home Appliances
-            </a>
+              Home Appliances </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="micro">Micro oven</a></li>
-              <li><a class="dropdown-item" routerLink="fridge">Refrigerator</a></li>
-              <li><a class="dropdown-item" routerLink="washingmach">Washing Machine</a></li>
+              <li><a class="dropdown-item" routerLink="micro"  *ngIf="auth">Micro oven</a></li>
+              <li><a class="dropdown-item" routerLink="fridge"  *ngIf="auth">Refrigerator</a></li>
+              <li><a class="dropdown-item" routerLink="washingmach"  *ngIf="auth">Washing Machine</a></li>
             </ul>
           </li>  
           <li class="nav-item">
-            <a class="nav-link" routerLink="Contact">Contact</a>
+            <a class="nav-link" routerLink="Contact"  *ngIf="auth">Contact</a>
           </li>    
         </ul>
         <form class="d-flex">

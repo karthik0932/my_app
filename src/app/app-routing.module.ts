@@ -12,11 +12,12 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 //Configure the routing path for the above imported components
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'cards',component:CardsComponent},
   {path:'fridge',component:RefrigeratorComponent},
   {path:'washingmach',component:WashingmachineComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'productdetails',component:ProductdetailsComponent},
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
-  {path:'cartitem',component:CartItemsComponent}
+  {path:'cartitem',component:CartItemsComponent},
+  {path:'admin',component:AdminComponent}
 
 ];
 

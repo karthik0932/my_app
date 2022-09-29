@@ -27,6 +27,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -54,6 +55,7 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     LoginComponent,
     RegisterComponent,
     CartItemsComponent,
+    AdminComponent,
     
 
   ],
